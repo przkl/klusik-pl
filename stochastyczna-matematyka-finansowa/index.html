@@ -1,38 +1,182 @@
-<!DOCTYPE html><html lang="pl"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Stochastyczna matematyka finansowa — opis kursu | dr Przemysław Klusik</title><meta name="description" content="Stochastyczna matematyka finansowa: wycena instrumentów i strategie zabezpieczające na rynkach zupełnych i niezupełnych w czasie dyskretnym, w oparciu o Foellmera i Schieda."><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/_astro/index.BhU-mZcV.css"></head> <body> <div class="scroll-progress" id="scrollProgress"></div> <header class="site-header"> <div class="wrap"> <a class="brand" href="/">Przemysław Klusik<span class="dot">.</span></a> <div class="nav-right"> <nav class="main"> <a href="/">Strona główna</a><a href="/inzynieria-finansowa/">Inżynieria finansowa</a><a href="/stochastyczna-matematyka-finansowa/" aria-current="page">Stochastyczna matematyka finansowa</a><a href="/kontakt/">Kontakt</a> </nav> </div> </div> </header>  <section class="page-hero"> <div class="wrap narrow reveal"> <h1>Stochastyczna matematyka finansowa</h1> <p class="lead">Opis kursu</p> </div> </section> <main> <div class="wrap narrow content"> <section class="block reveal"><h2>Wymogi</h2><ul class="clean"><li>nie jest potrzebne ukończenie WAIF I, ani WAIF II, ani Wstępu do Inżynierii Finansowej</li><li>kurs wymaga podstawowego rozumienia lub zdolności łatwego przyswojenia pojęć z teorii miary i rachunku prawdopodobieństwa, takich jak zmienna losowa, sigma-ciało, wartość oczekiwana warunkowa, adaptowalność, miara, przewidywalność, pochodna Radona-Nikodyma</li><li>zainteresowanie</li></ul></section><section class="block reveal"><h2>O kursie</h2><p class="prose">Kurs jest obowiązkową pozycją dla osób chcących w przyszłości zajmować się produkowaniem lub tylko wyceną instrumentów finansowych oraz osób, które chcą się zajmować matematyką finansową naukowo.</p><p class="prose">Pokazuje on, gdzie leży granica, której osoby bez wykształcenia matematycznego nie przekraczają, bo o ile podstawowa teoria stopy procentowej (wycena obligacji, kontraktów, kredyty, proste swapy, itp.) jest dostępna łatwo dla niematematyków, to już zarządzać instrumentami pochodnymi bez znajomości stochastycznej matematyki finansowej się nie da.</p><p class="prose"><strong>Wykład</strong> będzie prowadzony z dyscypliną matematyczną (definicja, twierdzenie, dowód) w ścisłym związku z książką „Stochastic finance” H. Foellmera i A. Schieda. Będzie koncentrował się na wycenie instrumentów finansowych i budowie strategii zabezpieczających w kontekście rynków zupełnych i niezupełnych. Wszystko będzie w terminologii znanej z teorii prawdopodobieństwa. Jednak będziemy poruszać się w czasie dyskretnym, co pozwoli na klarowne przedstawienie najważniejszych konceptów bez zaciemniających sprawę technikaliów potrzebnych przy modelowaniu ciągłym.</p><p class="prose"><strong>Ćwiczenia:</strong> zadania realizowane na ćwiczeniach będą miały charakter uzupełniający do wykładu (tj. przykłady zastosowań twierdzeń, budowanie intuicji, dowody i zadania obliczeniowe).</p><p class="prose"><strong>Projekty:</strong> w semestrze będzie kilka grupowych projektów case study, które pokażą, w jaki sposób wykorzystywać twierdzenia sformułowane w języku teorii miary i rachunku prawdopodobieństwa do rozwiązywania przyziemnych problemów takich, jak znalezienie optymalnej strategii inwestycyjnej lub zabezpieczającej.</p><p class="prose">Każda grupa będzie miała cotygodniowe konsultacje robocze. W pierwszym tygodniu nie ma zajęć projektowych. Projekty będą prezentowane w środowisku zbliżonym do biznesowego [zwykle na prezentacjach są również zaproszone osoby spoza kursu].</p></section><section class="block reveal"><h2>Sylabus wykładu</h2><ol class="syllabus"><li>Market model and European contingent claims<ol><li>Introduction to actually applied financial mathematics</li><li>The multi-period market model</li><li>Arbitrage opportunities and martingale measures</li><li>European contingent claims</li><li>Complete markets</li></ol></li><li>American contingent claims<ol><li>Hedging strategies for the seller</li><li>Stopping strategies for the buyer</li><li>Arbitrage-free prices</li><li>Stability under pasting</li></ol></li></ol></section> </div> </main>  <footer class="site-footer"> <div class="wrap"> <div> <p class="brand-foot">dr inż. Przemysław Klusik</p> <p style="color:#9fb0bd; max-width: 34ch; margin:0;">Life is complex. It has both real and imaginary parts.</p> </div> <div> <h4>Strona</h4> <ul> <li><a href="/">Strona główna</a></li><li><a href="/inzynieria-finansowa/">Inżynieria finansowa</a></li><li><a href="/stochastyczna-matematyka-finansowa/">Stochastyczna matematyka finansowa</a></li><li><a href="/kontakt/">Kontakt</a></li> </ul> </div> <div> <h4>Linki</h4> <ul> <li><a href="http://halley.pl/" rel="noopener">halley.pl</a></li><li><a href="http://www.math.uni.wroc.pl/" rel="noopener">Instytut Matematyczny UWr</a></li><li><a href="https://www.linkedin.com/in/przemyslaw-klusik-8431183/" rel="noopener">LinkedIn</a></li> </ul> </div> <div class="colophon"> <span>© 2026 dr inż. Przemysław Klusik · Wrocław</span> <span>Life is complex. It has both real and imaginary parts.</span> </div> </div> </footer> <script>
-    (function () {
-      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+<!DOCTYPE html>
+<html lang="en-US" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<link rel="profile" href="https://gmpg.org/xfn/11">
+	
+	<!--[if lt IE 9]>
+	<script src="/wp-content/themes/twentyfifteen/js/html5.js?ver=3.7.0"></script>
+	<![endif]-->
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Stochastyczna matematyka finansowa &#8211; opis kursu &#8211; Przemysław Klusik</title>
 
-      var els = document.querySelectorAll('.reveal');
-      if (!('IntersectionObserver' in window) || reduce) {
-        els.forEach(function (e) { e.classList.add('in'); });
-      } else {
-        var io = new IntersectionObserver(function (entries) {
-          entries.forEach(function (en) {
-            if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
-          });
-        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
-        els.forEach(function (e) { io.observe(e); });
-      }
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Przemysław Klusik &raquo; Feed" href="/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Przemysław Klusik &raquo; Comments Feed" href="/comments/feed/" />
+		<script>
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/13.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/klusik.pl\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.5.11"}};
+			!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){var a=String.fromCharCode;p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,e),0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(a.apply(this,t),0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(!p||!p.fillText)return!1;switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])?!1:!s([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!s([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]);case"emoji":return!s([55357,56424,8205,55356,57212],[55357,56424,8203,55356,57212])}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(n=t.source||{}).concatemoji?c(n.concatemoji):n.wpemoji&&n.twemoji&&(c(n.twemoji),c(n.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style>
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css'  href='/wp-includes/css/dist/block-library/style.min.css?ver=5.5.11' media='all' />
+<link rel='stylesheet' id='wp-block-library-theme-css'  href='/wp-includes/css/dist/block-library/theme.min.css?ver=5.5.11' media='all' />
+<link rel='stylesheet' id='twentyfifteen-fonts-css'  href='https://fonts.googleapis.com/css?family=Noto+Sans%3A400italic%2C700italic%2C400%2C700%7CNoto+Serif%3A400italic%2C700italic%2C400%2C700%7CInconsolata%3A400%2C700&#038;subset=latin%2Clatin-ext&#038;display=fallback' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='/wp-content/themes/twentyfifteen/genericons/genericons.css?ver=3.2' media='all' />
+<link rel='stylesheet' id='twentyfifteen-style-css'  href='/wp-content/themes/twentyfifteen/style.css?ver=20190507' media='all' />
+<link rel='stylesheet' id='twentyfifteen-block-style-css'  href='/wp-content/themes/twentyfifteen/css/blocks.css?ver=20190102' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentyfifteen-ie-css'  href='/wp-content/themes/twentyfifteen/css/ie.css?ver=20170916' media='all' />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='twentyfifteen-ie7-css'  href='/wp-content/themes/twentyfifteen/css/ie7.css?ver=20141210' media='all' />
+<![endif]-->
+<script src='/wp-includes/js/jquery/jquery.js?ver=1.12.4-wp' id='jquery-core-js'></script>
+<link rel="https://api.w.org/" href="/wp-json/" /><link rel="alternate" type="application/json" href="/wp-json/wp/v2/pages/401" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 5.5.11" />
+<link rel="canonical" href="/stochastyczna-matematyka-finansowa/" />
+<link rel='shortlink' href='/?p=401' />
+<link rel="alternate" type="application/json+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fklusik.pl%2Fstochastyczna-matematyka-finansowa%2F" />
+<link rel="alternate" type="text/xml+oembed" href="/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fklusik.pl%2Fstochastyczna-matematyka-finansowa%2F&#038;format=xml" />
+<meta name="generator" content="Elementor 3.11.1; settings: css_print_method-external, google_font-enabled, font_display-auto">
+</head>
 
-      var bar = document.getElementById('scrollProgress');
-      if (bar) {
-        var onScroll = function () {
-          var h = document.documentElement;
-          var max = h.scrollHeight - h.clientHeight;
-          bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
-        };
-        window.addEventListener('scroll', onScroll, { passive: true });
-        onScroll();
-      }
+<body class="page-template-default page page-id-401 wp-embed-responsive elementor-default elementor-kit-8">
+<div id="page" class="hfeed site">
+	<a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
-      var heroEl = document.getElementById('hero');
-      var glow = heroEl && heroEl.querySelector('.hero-glow');
-      if (heroEl && glow && !reduce && window.matchMedia('(pointer:fine)').matches) {
-        heroEl.addEventListener('mousemove', function (ev) {
-          var r = heroEl.getBoundingClientRect();
-          glow.style.setProperty('--mx', ((ev.clientX - r.left) / r.width * 100) + '%');
-          glow.style.setProperty('--my', ((ev.clientY - r.top) / r.height * 100) + '%');
-        });
-      }
-    })();
-  </script> </body> </html>
+	<div id="sidebar" class="sidebar">
+		<header id="masthead" class="site-header" role="banner">
+			<div class="site-branding">
+										<p class="site-title"><a href="/" rel="home">Przemysław Klusik</a></p>
+												<p class="site-description">Life is complex. It has both real and imaginary parts.</p>
+										<button class="secondary-toggle">Menu and widgets</button>
+			</div><!-- .site-branding -->
+		</header><!-- .site-header -->
+
+			<div id="secondary" class="secondary">
+
+					<nav id="site-navigation" class="main-navigation" role="navigation">
+				<div class="menu-menu-container"><ul id="menu-menu" class="nav-menu"><li id="menu-item-64" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-64"><a href="/">Home</a></li>
+<li id="menu-item-390" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-390"><a href="/inzynieria-finansowa-opis-kursu/">Inżynieria finansowa &#8211; sylabus</a></li>
+<li id="menu-item-408" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-401 current_page_item menu-item-408"><a href="/stochastyczna-matematyka-finansowa/" aria-current="page">Stochastyczna matematyka finansowa – sylabus</a></li>
+<li id="menu-item-60" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-60"><a href="/kontakt/">Kontakt</a></li>
+</ul></div>			</nav><!-- .main-navigation -->
+		
+		
+		
+	</div><!-- .secondary -->
+
+	</div><!-- .sidebar -->
+
+	<div id="content" class="site-content">
+
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+		
+<article id="post-401" class="post-401 page type-page status-publish hentry">
+	
+	<header class="entry-header">
+		<h1 class="entry-title">Stochastyczna matematyka finansowa &#8211; opis kursu</h1>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		
+<h1>Wymogi:</h1>
+
+
+
+<p>&#8211; nie jest potrzebne ukończenie WAIF I, ani WAIF II, ani Wstępu do Inżynierii Finansowej</p>
+
+
+
+<p>&#8211; kurs wymaga podstawowego rozumienia lub zdolności łatwego przyswojenia pojęć z teorii miary i rachunku prawdopodobieństwa, takich jak zmienna losowa, sigmaciało, wartość oczekiwana warunkowa, adaptowalność, miara, przewidywalność, pochodna Radona-Nikodyma.</p>
+
+
+
+<p>&#8211; zainteresowanie</p>
+
+
+
+<h1>O kursie:</h1>
+
+
+
+<p>Kurs jest obowiązkową pozycją, dla osób chcących w przyszłości zajmować się produkowaniem lub tylko wyceną instrumentów finansowych oraz osób, które chcą się zajmować matematyką finansową naukowo.</p>
+
+
+
+<p>Pokazuje on, gdzie leży granica, której osoby bez wykształcenia matematycznego nie przekraczają, bo o ile podstawowa teoria stopy procentowej (wycena obligacji, kontraktów, kredyty, proste swapy, itp.) jest dostępna łatwo dla niematematyków, to już zarządzać instrumentami pochodnymi bez znajomości stochastycznej matematyki finansowej się nie da.</p>
+
+
+
+<p><strong>Wykład</strong> będzie prowadzony z dyscypliną matematyczną (definicja, twierdzenie, dowód) w ścisłym związku z książką „Stochastic finance” H. Foellmera i A. Schieda.&nbsp; Będzie koncentrował się na wycenie instrumentów finansowych i budowie strategii zabezpieczających w kontekście rynków zupełnych i niezupełnych. &nbsp;Wszystko będzie w terminologii znanej z teorii prawdopodobieństwa. Jednak będziemy poruszać się w czasie dyskretnym, co pozwoli na klarowne przedstawienie najważniejszych konceptów bez zaciemniających sprawę technikaliów potrzebnych przy modelowaniu ciągłym.</p>
+
+
+
+<p><strong>Ćwiczenia: </strong>zadania realizowane na ćwiczeniach będą miały charakter uzupełniający do wykładu ( tj. przykłady zastosowań twierdzeń, budowanie intuicji, dowody i zadania obliczeniowe).</p>
+
+
+
+<p><strong>Projekty: </strong>W semestrze będzie kilka grupowych projektów case study, które pokażą, w jaki sposób wykorzystywać twierdzenia sformułowane w języku teorii miary i rachunku prawdopodobieństwa do rozwiązywania przyziemnych problemów takich, jak znalezienie optymalnej strategii inwestycyjnej lub zabezpieczającej. </p>
+
+
+
+<p>Każda grupa będzie miała cotygodniowe konsultacje robocze. W pierwszym tygodniu nie ma zajęć projektowych.</p>
+
+
+
+<p>Projekty będą prezentowane w środowisku zbliżonym do biznesowego [zwykle na prezentacjach są również zaproszone osoby spoza kursu]. </p>
+
+
+
+<h1>Sylabus wykładu</h1>
+
+
+
+<ol type="1"><li>Market model and European contingent claims<ol><li>Introduction to <strong>actually applied</strong> financial mathematics</li></ol><ol><li>The multi-period market model</li></ol><ol><li>Arbitrage opportunities and martingale measures</li></ol><ol><li>European contingent claims</li></ol><ol><li>Complete markets</li></ol></li><li>American contingent claims<ol><li>Hedging strategies for the seller</li></ol><ol><li>Stopping strategies for the buyer</li></ol><ol><li>Arbitrage-free prices</li></ol><ol><li>Stability under pasting</li></ol></li></ol>
+			</div><!-- .entry-content -->
+
+	
+</article><!-- #post-401 -->
+
+		</main><!-- .site-main -->
+	</div><!-- .content-area -->
+
+
+	</div><!-- .site-content -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+									<a href="https://wordpress.org/" class="imprint">
+				Proudly powered by WordPress			</a>
+		</div><!-- .site-info -->
+	</footer><!-- .site-footer -->
+
+</div><!-- .site -->
+
+<script src='/wp-content/themes/twentyfifteen/js/skip-link-focus-fix.js?ver=20141028' id='twentyfifteen-skip-link-focus-fix-js'></script>
+<script id='twentyfifteen-script-js-extra'>
+var screenReaderText = {"expand":"<span class=\"screen-reader-text\">expand child menu<\/span>","collapse":"<span class=\"screen-reader-text\">collapse child menu<\/span>"};
+</script>
+<script src='/wp-content/themes/twentyfifteen/js/functions.js?ver=20171218' id='twentyfifteen-script-js'></script>
+<script src='/wp-includes/js/wp-embed.min.js?ver=5.5.11' id='wp-embed-js'></script>
+
+</body>
+</html>
