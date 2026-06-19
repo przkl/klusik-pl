@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="pl"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Stochastyczna matematyka finansowa — opis kursu | dr Przemysław Klusik</title><meta name="description" content="Stochastyczna matematyka finansowa: wycena instrumentów i strategie zabezpieczające na rynkach zupełnych i niezupełnych w czasie dyskretnym, w oparciu o Foellmera i Schieda."><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/_astro/index.BhU-mZcV.css"></head> <body> <div class="scroll-progress" id="scrollProgress"></div> <header class="site-header"> <div class="wrap"> <a class="brand" href="/">Przemysław Klusik<span class="dot">.</span></a> <div class="nav-right"> <nav class="main"> <a href="/">Strona główna</a><a href="/inzynieria-finansowa/">Inżynieria finansowa</a><a href="/stochastyczna-matematyka-finansowa/" aria-current="page">Stochastyczna matematyka finansowa</a><a href="/kontakt/">Kontakt</a> </nav> </div> </div> </header>  <section class="page-hero"> <div class="wrap narrow reveal"> <h1>Stochastyczna matematyka finansowa</h1> <p class="lead">Opis kursu</p> </div> </section> <main> <div class="wrap narrow content"> <section class="block reveal"><h2>Wymogi</h2><ul class="clean"><li>nie jest potrzebne ukończenie WAIF I, ani WAIF II, ani Wstępu do Inżynierii Finansowej</li><li>kurs wymaga podstawowego rozumienia lub zdolności łatwego przyswojenia pojęć z teorii miary i rachunku prawdopodobieństwa, takich jak zmienna losowa, sigma-ciało, wartość oczekiwana warunkowa, adaptowalność, miara, przewidywalność, pochodna Radona-Nikodyma</li><li>zainteresowanie</li></ul></section><section class="block reveal"><h2>O kursie</h2><p class="prose">Kurs jest obowiązkową pozycją dla osób chcących w przyszłości zajmować się produkowaniem lub tylko wyceną instrumentów finansowych oraz osób, które chcą się zajmować matematyką finansową naukowo.</p><p class="prose">Pokazuje on, gdzie leży granica, której osoby bez wykształcenia matematycznego nie przekraczają, bo o ile podstawowa teoria stopy procentowej (wycena obligacji, kontraktów, kredyty, proste swapy, itp.) jest dostępna łatwo dla niematematyków, to już zarządzać instrumentami pochodnymi bez znajomości stochastycznej matematyki finansowej się nie da.</p><p class="prose"><strong>Wykład</strong> będzie prowadzony z dyscypliną matematyczną (definicja, twierdzenie, dowód) w ścisłym związku z książką „Stochastic finance” H. Foellmera i A. Schieda. Będzie koncentrował się na wycenie instrumentów finansowych i budowie strategii zabezpieczających w kontekście rynków zupełnych i niezupełnych. Wszystko będzie w terminologii znanej z teorii prawdopodobieństwa. Jednak będziemy poruszać się w czasie dyskretnym, co pozwoli na klarowne przedstawienie najważniejszych konceptów bez zaciemniających sprawę technikaliów potrzebnych przy modelowaniu ciągłym.</p><p class="prose"><strong>Ćwiczenia:</strong> zadania realizowane na ćwiczeniach będą miały charakter uzupełniający do wykładu (tj. przykłady zastosowań twierdzeń, budowanie intuicji, dowody i zadania obliczeniowe).</p><p class="prose"><strong>Projekty:</strong> w semestrze będzie kilka grupowych projektów case study, które pokażą, w jaki sposób wykorzystywać twierdzenia sformułowane w języku teorii miary i rachunku prawdopodobieństwa do rozwiązywania przyziemnych problemów takich, jak znalezienie optymalnej strategii inwestycyjnej lub zabezpieczającej.</p><p class="prose">Każda grupa będzie miała cotygodniowe konsultacje robocze. W pierwszym tygodniu nie ma zajęć projektowych. Projekty będą prezentowane w środowisku zbliżonym do biznesowego [zwykle na prezentacjach są również zaproszone osoby spoza kursu].</p></section><section class="block reveal"><h2>Sylabus wykładu</h2><ol class="syllabus"><li>Market model and European contingent claims<ol><li>Introduction to actually applied financial mathematics</li><li>The multi-period market model</li><li>Arbitrage opportunities and martingale measures</li><li>European contingent claims</li><li>Complete markets</li></ol></li><li>American contingent claims<ol><li>Hedging strategies for the seller</li><li>Stopping strategies for the buyer</li><li>Arbitrage-free prices</li><li>Stability under pasting</li></ol></li></ol></section> </div> </main>  <footer class="site-footer"> <div class="wrap"> <div> <p class="brand-foot">dr inż. Przemysław Klusik</p> <p style="color:#9fb0bd; max-width: 34ch; margin:0;">Life is complex. It has both real and imaginary parts.</p> </div> <div> <h4>Strona</h4> <ul> <li><a href="/">Strona główna</a></li><li><a href="/inzynieria-finansowa/">Inżynieria finansowa</a></li><li><a href="/stochastyczna-matematyka-finansowa/">Stochastyczna matematyka finansowa</a></li><li><a href="/kontakt/">Kontakt</a></li> </ul> </div> <div> <h4>Linki</h4> <ul> <li><a href="http://halley.pl/" rel="noopener">halley.pl</a></li><li><a href="http://www.math.uni.wroc.pl/" rel="noopener">Instytut Matematyczny UWr</a></li><li><a href="https://www.linkedin.com/in/przemyslaw-klusik-8431183/" rel="noopener">LinkedIn</a></li> </ul> </div> <div class="colophon"> <span>© 2026 dr inż. Przemysław Klusik · Wrocław</span> <span>Life is complex. It has both real and imaginary parts.</span> </div> </div> </footer> <script>
+    (function () {
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || reduce) {
+        els.forEach(function (e) { e.classList.add('in'); });
+      } else {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+        els.forEach(function (e) { io.observe(e); });
+      }
+
+      var bar = document.getElementById('scrollProgress');
+      if (bar) {
+        var onScroll = function () {
+          var h = document.documentElement;
+          var max = h.scrollHeight - h.clientHeight;
+          bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      }
+
+      var heroEl = document.getElementById('hero');
+      var glow = heroEl && heroEl.querySelector('.hero-glow');
+      if (heroEl && glow && !reduce && window.matchMedia('(pointer:fine)').matches) {
+        heroEl.addEventListener('mousemove', function (ev) {
+          var r = heroEl.getBoundingClientRect();
+          glow.style.setProperty('--mx', ((ev.clientX - r.left) / r.width * 100) + '%');
+          glow.style.setProperty('--my', ((ev.clientY - r.top) / r.height * 100) + '%');
+        });
+      }
+    })();
+  </script> </body> </html>

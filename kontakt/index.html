@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="pl"> <head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Kontakt | dr Przemysław Klusik</title><meta name="description" content="Kontakt — dr Przemysław Klusik, Instytut Matematyczny Uniwersytetu Wrocławskiego, pokój 312, pl. Grunwaldzki 2/4, 50-384 Wrocław."><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="/_astro/index.BhU-mZcV.css"></head> <body> <div class="scroll-progress" id="scrollProgress"></div> <header class="site-header"> <div class="wrap"> <a class="brand" href="/">Przemysław Klusik<span class="dot">.</span></a> <div class="nav-right"> <nav class="main"> <a href="/">Strona główna</a><a href="/inzynieria-finansowa/">Inżynieria finansowa</a><a href="/stochastyczna-matematyka-finansowa/">Stochastyczna matematyka finansowa</a><a href="/kontakt/" aria-current="page">Kontakt</a> </nav> </div> </div> </header>  <section class="page-hero"> <div class="wrap narrow reveal"> <h1>Kontakt</h1> <p class="lead">Instytut Matematyczny Uniwersytetu Wrocławskiego</p> </div> </section> <main> <div class="wrap narrow content"> <div class="contact-grid"> <div class="contact-item"> <h3>Adres</h3> <p>Instytut Matematyczny Uniwersytetu Wrocławskiego<br />pokój 312<br />pl. Grunwaldzki 2/4<br />50-384 Wrocław</p> </div> <div class="contact-item"> <h3>Email</h3> <p>klusik <span class="muted">(na serwerze)</span> math.uni.wroc.pl</p> </div> <div class="contact-item"> <h3>Konsultacje</h3> <p>Konsultacje proszę każdorazowo uzgadniać emailem.</p> </div> <div class="contact-item"> <h3>LinkedIn</h3> <p><a href="https://www.linkedin.com/in/przemyslaw-klusik-8431183/" rel="noopener">linkedin.com/in/przemyslaw-klusik</a></p> </div> <div class="map-frame"> <iframe loading="lazy" title="Instytut Matematyczny Uniwersytetu Wrocławskiego" src="https://maps.google.com/maps?q=Instytut%20Matematyczny%20Uniwersytetu%20Wroc%C5%82awskiego&t=m&z=15&output=embed&iwloc=near"></iframe> </div> </div> </div> </main>  <footer class="site-footer"> <div class="wrap"> <div> <p class="brand-foot">dr inż. Przemysław Klusik</p> <p style="color:#9fb0bd; max-width: 34ch; margin:0;">Life is complex. It has both real and imaginary parts.</p> </div> <div> <h4>Strona</h4> <ul> <li><a href="/">Strona główna</a></li><li><a href="/inzynieria-finansowa/">Inżynieria finansowa</a></li><li><a href="/stochastyczna-matematyka-finansowa/">Stochastyczna matematyka finansowa</a></li><li><a href="/kontakt/">Kontakt</a></li> </ul> </div> <div> <h4>Linki</h4> <ul> <li><a href="http://halley.pl/" rel="noopener">halley.pl</a></li><li><a href="http://www.math.uni.wroc.pl/" rel="noopener">Instytut Matematyczny UWr</a></li><li><a href="https://www.linkedin.com/in/przemyslaw-klusik-8431183/" rel="noopener">LinkedIn</a></li> </ul> </div> <div class="colophon"> <span>© 2026 dr inż. Przemysław Klusik · Wrocław</span> <span>Life is complex. It has both real and imaginary parts.</span> </div> </div> </footer> <script>
+    (function () {
+      var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+      var els = document.querySelectorAll('.reveal');
+      if (!('IntersectionObserver' in window) || reduce) {
+        els.forEach(function (e) { e.classList.add('in'); });
+      } else {
+        var io = new IntersectionObserver(function (entries) {
+          entries.forEach(function (en) {
+            if (en.isIntersecting) { en.target.classList.add('in'); io.unobserve(en.target); }
+          });
+        }, { threshold: 0.12, rootMargin: '0px 0px -8% 0px' });
+        els.forEach(function (e) { io.observe(e); });
+      }
+
+      var bar = document.getElementById('scrollProgress');
+      if (bar) {
+        var onScroll = function () {
+          var h = document.documentElement;
+          var max = h.scrollHeight - h.clientHeight;
+          bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+        };
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+      }
+
+      var heroEl = document.getElementById('hero');
+      var glow = heroEl && heroEl.querySelector('.hero-glow');
+      if (heroEl && glow && !reduce && window.matchMedia('(pointer:fine)').matches) {
+        heroEl.addEventListener('mousemove', function (ev) {
+          var r = heroEl.getBoundingClientRect();
+          glow.style.setProperty('--mx', ((ev.clientX - r.left) / r.width * 100) + '%');
+          glow.style.setProperty('--my', ((ev.clientY - r.top) / r.height * 100) + '%');
+        });
+      }
+    })();
+  </script> </body> </html>
